@@ -18,12 +18,15 @@ An implementation of tap targets from [Google's Material Design guidelines on fe
 TapTargetView is distributed using [jcenter](https://bintray.com/keepsafesoftware/Android/TapTargetView/view).
 
 ```groovy
-   repositories { 
-        jcenter()
+   allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
    }
    
    dependencies {
-         implementation 'com.getkeepsafe.taptargetview:taptargetview:1.12.0'
+         implementation 'com.github.dhimant1990:TapTargetView:1.12.0'
    }
 ```
 
